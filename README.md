@@ -32,3 +32,8 @@ You are a DevOps Engineer at Zava Construction supporting a Power Platform imple
 
 Implement a source control centric development, build and deployment process using the capabilities available within Azure DevOps. The labs in this repository will guide you through the setup and at the end of the bootcamp a working solution will be shared with you.
 
+## Resources
+
+Here are some helpful resources that will enhance your learning experience during and beyond the bootcamp. Be sure to bookmark these!  
+1. [Power Platform Build Tools GitHub repository with task definitions](https://github.com/microsoft/powerplatform-build-tools/tree/main/src/tasks)  
+2. [Power Platfrom Build Tools Tasks documentation](https://learn.microsoft.com/en-us/power-platform/alm/devops-build-tool-tasks)
