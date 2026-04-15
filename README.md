@@ -26,7 +26,7 @@ In order to get the most value out of the bootcamp, we recommend that you have t
 ## Background
 
 You are a DevOps Engineer at Zava Construction supporting a Power Platform implementation project where a team of 3 low-code/no-code developers are building a solution for internal use. They share the same development environment and require quality assurance to be conducted in a dedicated test environment before the solution is allowed to be deployed to production
-![Source Control Centric DevOps for Power Platform](https://github.com/parvezghumra/PowerPlatformDevOpsBootcamp/blob/main/Media/SourceControlCentricALMForPowerPlatform.png)
+![Source Control Centric DevOps for Power Platform](https://github.com/parvezghumra/PowerPlatformDevOpsBootcamp/blob/main/Media/Introduction/SourceControlCentricALMForPowerPlatform.png)
 
 ## The Challenge
 
