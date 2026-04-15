@@ -6,9 +6,23 @@ Welcome to the Power Platform DevOps Bootcamp hosted by [Power Community](https:
 
 The bootcamp is led by [Wael Hamze](https://www.linkedin.com/in/waelhamze/) and [Parvez Ghumra](https://www.linkedin.com/in/parvezghumra). It is intended to be an interactive learning experience, so feel free to ask questions and engage during the day. We hope you find it helpful and that it gives you a good starting point for learning Power Platform DevOps principles. If you have any follow-up questions after the bootcamp, don't hesitate to reach out to us on LinkedIn.
 
+## Agenda
+
+| Start | End | Description |
+| --- | --- | --- |
+| 9:00 | 9:30 | Intro (Speakers + Audience) |
+| 09:30 | 10:15 | Overview of DevOps |
+| 10:15 | 11:00 | Pre-requisites + Lab Intros |
+| 11:00 | 11:15 | Break |
+| 11:15 | 13:00 | Labs |
+| 13:00 | 14:00 | Lunch |
+| 14:00 | 14:45 | Testing Session |
+| 14:45 | 16:30 | Labs (Including testing) |
+| 16:30 | 17:00 | Q&A + Wrap Up |
+
 ## Minimum Requirements
 
-In order to get the most value out of the bootcamp, we recommend that you have the following as a minimum:
+In order to get the most value out of the bootcamp, we recommend that you have the following as a minimum. This is a checklist for completeness but you should have these covered already if you have completed the pre-workshop setup steps as documented [here](./Media/PP-ALM-Bootcamp-Setup-Guide.docx):
 1. Basic experience of customising Power Platform including Dataverse, Model Driven Apps and Power Automate using the [Power Apps Maker Portal](https://make.powerapps.com)  
 2. A laptop with power supply and any necessary accessories with:  
     a. [Visual Studio Code](https://code.visualstudio.com/download)  
@@ -26,7 +40,7 @@ In order to get the most value out of the bootcamp, we recommend that you have t
 ## Background
 
 You are a DevOps Engineer at Zava Construction supporting a Power Platform implementation project where a team of 3 low-code/no-code developers are building a solution for internal use. They share the same development environment and require quality assurance to be conducted in a dedicated test environment before the solution is allowed to be deployed to production
-![Source Control Centric DevOps for Power Platform](https://github.com/parvezghumra/PowerPlatformDevOpsBootcamp/blob/main/Media/Introduction/SourceControlCentricALMForPowerPlatform.png)
+![Source Control Centric DevOps for Power Platform](./Media/Introduction/SourceControlCentricALMForPowerPlatform.png)
 
 ## The Challenge
 
