@@ -21,7 +21,7 @@ For this lesson, we will use Visual Studio Code. If you do not have Visual Studi
 
 ### Repo 
 
-Go to the DevOps organization (`pp-bootcamp-[name]`) that you created in DevOps in preparation for this lab.
+Go to the DevOps organization (pp-bootcamp-[name]) and the project  you created (PowerPlatformALM) in DevOps in preparation for this lab.
 
 Go to Repositories.
 
@@ -29,7 +29,12 @@ Choose `Create a new repository`.
 
 Give the repository the name `Playwright`.
 
+![New repo](./media/Lesson0/L0S0-NewRepo.png)
+
 After the repository has been created, choose the `Clone in VS Code` option under Clone.
+
+![Clone in VSCode](./media/Lesson0/L0S0-CloneInVsCode.png)
+
 
 
 
@@ -195,6 +200,7 @@ In this lesson, you installed the Playwright extension for Visual Studio Code an
 
 ## Reference Links
 
-- [link](website)
+- [Playwright - Getting started with VSCode](https://playwright.dev/docs/getting-started-vscode)
+- [Playwright - Running tests](https://playwright.dev/docs/running-tests)
 
 

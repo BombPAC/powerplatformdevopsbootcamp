@@ -223,13 +223,13 @@ to:
 - paragraph: What's newwwww
 ```
 
-Your test will now look like this:
+Your test will now look like this
 
-[screenshot]
+![Fail the test](./media/Lesson1/L1S4-SnapshotResult.png)
 
 Run the test once again.
 
-View the report using the following command:
+View the report (again) using the following command
 
 ```bash
 npx playwright show-report
@@ -245,5 +245,5 @@ In this lesson, you learned how to create and manage Playwright tests using the 
 
 ## Reference Links
 
-- [link](website)
+- [Playwright - Generating tests](https://playwright.dev/docs/codegen-intro)
 
