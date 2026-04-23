@@ -2,6 +2,9 @@
 
 ## Objective
 
+In this lesson, you will learn how to create, run, and update Playwright tests by using the Visual Studio Code extension and the `codegen` recorder. You will also explore how assertions and `aria snapshots` can be used to validate page content, and how to review successful and failed test runs in the Playwright HTML report.
+
+
 ## Step 1 - Record a new test
 
 There are several ways to create a test in Playwright. You can write a test manually in TypeScript or JavaScript, or you can use the recorder, better known as `codegen`, to create a test.
