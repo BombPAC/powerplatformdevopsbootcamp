@@ -194,27 +194,51 @@ We have now created a new test with an `aria snapshot`. In the next step, we wil
 
 ## Step 5 - Run test
 
-Open je laatste nieuwe test in editor weergave
+Open your most recently created test in the editor view.
 
-Voer de test uit door op het play icon in editor weergave te klikken
+Run the test by clicking the play icon in the editor view.
 
-Bekijk het rapport via het commando
+View the report using the following command:
 
 ```bash
 npx playwright show-report
 ```
 
-Je zult in het rapport zien dat de test is uitgevoerd en is gelukt. 
+In the report, you will see that the test has been executed successfully.
 
-Ga nu terug naar dezelfde test (in je editor)
+Now go back to the same test in your editor.
 
-Voeg een aantal 
+Change the following line:
+
+```
+- paragraph: What's new
+```
+
+to:
+
+```
+- paragraph: What's newwwww
+```
+
+Your test will now look like this:
+
+[screenshot]
+
+Run the test once again.
+
+View the report using the following command:
+
+```bash
+npx playwright show-report
+```
 
 
 
 ## Summary
 
-You now have:
+In this lesson, you learned how to create and manage Playwright tests using the VS Code extension and `codegen`. You recorded a new test, ran it in UI mode, and extended it by adding extra recorded steps. You also explored snapshot testing, including assertions and `aria snapshots`, and created a new test that uses an `aria snapshot` to validate page content. Finally, you ran the test, reviewed the HTML report, and saw how changing expected content can cause a test to fail.
+
+
 
 ## Reference Links
 
