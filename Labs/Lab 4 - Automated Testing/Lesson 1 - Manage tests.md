@@ -68,8 +68,42 @@ Go to the test you just created and click `run`.
 
 ## Step 3 - Make changes to your test
 
-- TypeScript
-- Record at cursor
+After a test has been created, you may want to change it or extend it. This can also be done in different ways. You can make changes directly in the `spec.ts` file by writing TypeScript, but you can also use the `codegen` functionality to make changes.
+
+In this step, we will further extend the test from Step 2. Follow these steps:
+
+Open the newly generated test named `test-1.spec.ts` in your editor.
+
+Click the `play` icon to run the test
+
+![Open test](./media/Lesson1/L1S3-RunTest.png)
+
+When the test has finished, keep the browser open
+
+Go to the Playwright extension and click `Record at cursor`
+
+![Recor at cursor](./media/Lesson1/L1S3-RecordAtCursor.png)
+
+All steps you take now will be added to the test in `test-1.spec.ts`
+
+In this example, we click `CLI` at the top of the page so that this navigation is added to the test.
+
+Stop the recording
+
+![Stop recording](./media/Lesson1/L1S3-StopRecording.png)
+
+As you can see, the test script has now been extended with a new step
+
+![See changes](./media/Lesson1/L1S3-SeeChanges.png)
+
+
+
+
+
+
+
+
+
 
 
 
