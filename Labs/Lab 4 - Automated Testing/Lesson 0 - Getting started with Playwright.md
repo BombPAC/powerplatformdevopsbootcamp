@@ -13,35 +13,145 @@ By the end of this exercise you will have:
 
 
 
-
 ## Before we start
 
-Voor deze les gaan we gebruik maken van Visual Studio Code. Heb je Visual Sudio Code nog niet, je kunt heh hier downloaden
+For this lesson, we will use Visual Studio Code. If you do not have Visual Studio Code installed yet, you can download it from [code.visualstudio.com](https://code.visualstudio.com/)
 
 
 ## Step 1 - Install Playwright extension
 
-Open Visual Studio Code (VSCode) en ga naar extensies
+1. Open Visual Studio Code (VSCode)
 
-[screenshot]
+2. Go to Extensions
 
+3. Search for Playwright
 
+4. Select Playwright Test for VS Code and click Install
+
+![Install Playwright extension](./media/Lesson0/L0S1-Extension.png)
 
 
 ## Step 2 - Install Playwright
 
+Now that the extension is installed, we are going to install the latest version of Playwright.
 
-## Step 3 - Run your first test
+Open the terminal and run the following command:
 
-Default test provided by Plywright
+```bash
+npm init playwright@latest
+```
 
-## Step 4 - Run your test in UI mode
+You will now be asked a number of questions.
+
+1. Choose TypeScript.
+
+2. Choose a location for your end-to-end tests. For now, use the default `/tests` location.
+
+3. Set `Add GitHub Actions` to `true`.
+
+4. Set `Install Playwright browsers` to `true`.
+
+![TypeScript](./media/Lesson0/L0S2-InstallBrowsers.png)
+
+Playwright is now installed, and you will also see an included test in the folder structure.
+
+![Installation complete](./media/Lesson0/L0S2-InstallDone.png)
 
 
-## Step 5 - View HTML report
 
 
-## Step 6 - Playwright configuration
+
+## Step 3 - Run a test
+
+When Playwright is installed, a basic test is included as well. This test is related to the Playwright website. In this step, we will use this test to get familiar with Playwright in combination with the VS Code extension.
+
+There are several ways to run a test:
+
+1. Direct from spec.ts file
+2. Playwright extension
+3. UI mode
+4. Command line 
+
+
+### 1. Run from spec.ts file
+
+Go to your `/tests` folder and click the file `example.spec.ts` so that it opens in your editor.
+
+![Example Test](./media/Lesson0/L0S3-Example.png)
+
+This file now contains two tests. Each test has a green Play icon. Clicking this icon will run the test. A browser will open automatically, and the steps in the test will be executed.
+
+![Run test](./media/Lesson0/L0S3-RunTest.png)
+
+
+### 2. Run from Playwright extension
+
+Open the Playwright extension in VS Code.
+
+Click `tests`.
+
+Click `run tests`.
+
+Click `example.spec.ts`.
+
+In this case, all tests defined in `example.spec.ts` will run one after another.
+
+![Run tests from extension](./media/Lesson0/L0S3-ExtensionRun.png)
+
+
+### 3. UI Mode
+
+Playwright includes a UI mode that allows you to run tests. UI mode gives you direct insight into the tested steps, and lets you follow and analyze them.
+
+The Playwright extension does not yet have a button to start UI mode, so we need to use the following command in the terminal:
+
+```bash
+npx playwright test --ui
+```
+
+
+
+
+### 4. Command line
+
+Another way to start a test is by running a command directly in the terminal.
+
+Open the terminal and run the following command:
+
+```bash
+npx playwright test
+```
+
+What you will notice is that these tests run completely **headless**. No browser will be opened. Instead, the test runs entirely in the background, and the result is shown in your terminal.
+
+![Run tests from command line](./media/Lesson0/L0S3-ExtensionRun.png)
+
+If you want to follow the test in the browser, you can add the `--headed` option to the command.
+
+```bash 
+npx playwright test --headed
+```
+
+The commands above will run all tests you have generated at once. You can also run a specific test from the terminal.
+
+Open your terminal and run the following command:
+
+```bash
+npx playwright test -g "get started link"
+```
+
+This runs only the test with the title `get started link`.
+
+![Run single test from command line](./media/Lesson0/L0S4-RunSingleTest.png)
+
+
+## Step 4 - View HTML report
+
+
+
+
+
+## Step 5 - Playwright configuration
 
 
 
@@ -54,23 +164,3 @@ You now have:
 - [link](website)
 
 
-
-
-
-## Structure (temp):
-
-* Visual Studio Code 
-    * Download & install
-    * Get the Playwright extension
-
-* VSCode extension
-    * Run a test
-    * spect.ts (show results)
-
-* Projects
-    * Browsers
-    * Add a browser, viewport or device
-
-* View Testresults
-    * UI Mode
-    * HTML report
