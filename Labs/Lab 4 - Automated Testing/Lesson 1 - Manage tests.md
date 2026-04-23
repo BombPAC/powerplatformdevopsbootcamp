@@ -194,7 +194,21 @@ We have now created a new test with an `aria snapshot`. In the next step, we wil
 
 ## Step 5 - Run test
 
-Open je laatste nieuwe test in 
+Open je laatste nieuwe test in editor weergave
+
+Voer de test uit door op het play icon in editor weergave te klikken
+
+Bekijk het rapport via het commando
+
+```bash
+npx playwright show-report
+```
+
+Je zult in het rapport zien dat de test is uitgevoerd en is gelukt. 
+
+Ga nu terug naar dezelfde test (in je editor)
+
+Voeg een aantal 
 
 
 
