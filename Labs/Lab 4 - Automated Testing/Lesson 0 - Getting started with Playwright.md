@@ -109,7 +109,9 @@ The Playwright extension does not yet have a button to start UI mode, so we need
 npx playwright test --ui
 ```
 
+After you run this command, UI mode will open in a new window. In this app, you can run, follow, and analyze your test within a visual interface.
 
+![Run tests in UI mode](./media/Lesson0/L0S4-UImode.png)
 
 
 ### 4. Command line
@@ -147,7 +149,21 @@ This runs only the test with the title `get started link`.
 
 ## Step 4 - View HTML report
 
+After Playwright has run tests, whether that is a single test, multiple tests, or all tests, it will generate an HTML report with the test results in the background.
 
+A direct link to this report is always available after running tests in your terminal. You can also open the report again at any time during the session.
+
+To open the report, follow these steps:
+
+Open your terminal
+
+Run the following command
+
+```bash
+npx playwright show-report
+```
+
+![Run HTML report](./media/Lesson0/L0S4-Report.png)
 
 
 
@@ -155,9 +171,14 @@ This runs only the test with the title `get started link`.
 
 
 
+
+
+
 ## Summary
 
-You now have:
+In this lesson, you installed the Playwright extension for Visual Studio Code and set up Playwright in your project. You learned several ways to run tests, including from the test file, through the Playwright extension, in UI mode, and from the command line. You also saw how to run tests in headed and headless mode, how to run a single test, and how to open the HTML report to review test results.
+
+
 
 ## Reference Links
 
