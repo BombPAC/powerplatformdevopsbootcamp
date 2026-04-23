@@ -15,18 +15,31 @@ By the end of this exercise you will have:
 
 ## Before we start
 
+### Visual Studio Code
+
 For this lesson, we will use Visual Studio Code. If you do not have Visual Studio Code installed yet, you can download it from [code.visualstudio.com](https://code.visualstudio.com/)
+
+### Repo 
+
+Go to the DevOps organization (`pp-bootcamp-[name]`) that you created in DevOps in preparation for this lab.
+
+Go to Repositories.
+
+Choose `Create a new repository`.
+
+Give the repository the name `Playwright`.
+
+After the repository has been created, choose the `Clone in VS Code` option under Clone.
+
 
 
 ## Step 1 - Install Playwright extension
 
-1. Open Visual Studio Code (VSCode)
+1. Go to Extensions
 
-2. Go to Extensions
+2. Search for Playwright
 
-3. Search for Playwright
-
-4. Select Playwright Test for VS Code and click Install
+3. Select Playwright Test for VS Code and click Install
 
 ![Install Playwright extension](./media/Lesson0/L0S1-Extension.png)
 

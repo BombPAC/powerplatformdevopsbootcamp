@@ -2,7 +2,6 @@
 
 ## Objective
 
-
 ## Step 1 - Record a new test
 
 There are several ways to create a test in Playwright. You can write a test manually in TypeScript or JavaScript, or you can use the recorder, better known as `codegen`, to create a test.
@@ -100,25 +99,102 @@ As you can see, the test script has now been extended with a new step
 
 
 
+## Step 4 - Snapshot testing
+
+Within Playwright, three things are very important for creating a good test:
+
+- Goto
+- Locators
+- Assertions
+
+These are all functions that Playwright needs to run a test. `goto` defines the URL where the test will run. Locators are the elements that need to be found, such as a button, link, heading, or text, and in addition, assertions can be added to the test.
+
+In that sense, Playwright works very simply: there are two outcomes, true or false. If a URL or locator, for example the `CLI` link from the previous test, cannot be found, the test will return false, which means the test will fail.
+
+### Assertion
+
+An assertion is a piece of code in which you can add logic and ask Playwright to evaluate whether the outcome is true or false.
+
+For example, you can evaluate whether a certain piece of text is available in a field or locator.
+
+```bash
+await expect(locator).toContainText('some text');
+```
+
+You can also reverse the example above by adding `not`.
+
+```bash
+await expect(locator).not.toContainText('some text');
+```
+
+You can find more information about using assertions on the [Playwright website](https://playwright.dev/docs/test-assertions#auto-retrying-assertions).
 
 
+### Aria Snapshot
+
+One of the most commonly used and very useful assertions in Playwright is the `toMatchAriaSnapshot` assertion.
+
+The advantage of using an Aria snapshot is that you do not have to define many separate elements in your test. You can easily create a snapshot while recording your test. When the test runs, Playwright compares the full snapshot with the situation in the browser, and if there are differences, the test will fail.
+
+See below for an example of a snapshot:
+
+```bash
+await page.goto('https://playwright.dev/');
+await expect(page.getByRole('banner')).toMatchAriaSnapshot(`
+  - banner:
+    - heading /Playwright enables reliable end-to-end/ [level=1]
+    - link "Get started":
+      - /url: /docs/intro
+    - link "Star microsoft/playwright on GitHub":
+      - /url: https://github.com/microsoft/playwright
+    - link /[\\d]+k\\+ stargazers on GitHub/
+`);
+```
 
 
+### Create a Aria Snapshot
+
+In this step, we are going to create a new test, once again using the `codegen` functionality. In this example, we go to the `learn.microsoft.com` website and then navigate to the `Power Platform documentation`. On this page, we create a snapshot that we then add to our test.
+
+Follow these steps:
+
+Open VS Code.
+
+Start the Playwright extension.
+
+Click `Record new`.
+
+When the browser opens, enter the following address: `learn.microsoft.com`.
+
+Click `Documentation` and then `Power Platform documentation`.
+
+Now change the name of the test to `Microsoft Learn` so that we can easily recognize it later.
+
+Your test will now look like this:
+
+![New test for Learn](./media/Lesson1/L1S4-Learn.png)
+
+Run the `Microsoft Learn` test and then choose `Record at cursor` to make changes.
+
+Now click the `Assert snapshot` button.
+
+![New test for Learn](./media/Lesson1/L1S4-AssertSnapshot.png)
+
+Move your cursor over the page and look for the locator named `#highlighted-content`. Then click this element.
+
+![New test for Learn](./media/Lesson1/L1S4-CreateSnapshot.png)
+
+After completing this action, your test will look approximately like this:
+
+![Snapshot result](./media/Lesson1/L1S4-SnapshotResult.png)
 
 
+We have now created a new test with an `aria snapshot`. In the next step, we will run the test. We will also take a look at what happens when a test fails.
 
 
+## Step 5 - Run test
 
-
-
-
-
-## Step 4 - Aria snapshot
-
-
-
-
-## Step 5 - View HTML report
+Open je laatste nieuwe test in 
 
 
 
