@@ -4,7 +4,7 @@ Welcome to the Power Platform DevOps Bootcamp hosted by [Power Community](https:
 
 ## Your Instructors
 
-The bootcamp is led by [Wael Hamze](https://www.linkedin.com/in/waelhamze/) and [Parvez Ghumra](https://www.linkedin.com/in/parvezghumra). It is intended to be an interactive learning experience, so feel free to ask questions and engage during the day. We hope you find it helpful and that it gives you a good starting point for learning Power Platform DevOps principles. If you have any follow-up questions after the bootcamp, don't hesitate to reach out to us on LinkedIn.
+The bootcamp is led by [Wael Hamze](https://www.linkedin.com/in/waelhamze/), [Parvez Ghumra](https://www.linkedin.com/in/parvezghumra), [Arjan Rijsdijk](https://www.linkedin.com/in/arjanrijsdijk/) and [Stalin Ponnusamy](https://www.linkedin.com/in/stalinponnusamy/). It is intended to be an interactive learning experience, so feel free to ask questions and engage during the day. We hope you find it helpful and that it gives you a good starting point for learning Power Platform DevOps principles. If you have any follow-up questions after the bootcamp, don't hesitate to reach out to us on LinkedIn.
 
 ## Agenda
 
@@ -35,7 +35,9 @@ In order to get the most value out of the bootcamp, we recommend that you have t
     a. Full organization admin rights; OR  
     b. A [project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser) with admin rights in it and the Power Platform Build Tools extension for Azure DevOps pre-installed  
 6. A working [Microsoft-hosted agent](https://aka.ms/azpipelines-parallelism-request) in Azure DevOps to process pipelines  
-7. Curiosity for learning DevOps for Power Platform  
+7. Curiosity for learning DevOps for Power Platform
+
+If you have been unable to complete any of these prerequisites, please complete [this form](https://forms.cloud.microsoft/e/E9K8z9b78g), and we will try our best to help
 
 ## Background
 
