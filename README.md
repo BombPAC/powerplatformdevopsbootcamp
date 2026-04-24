@@ -29,12 +29,12 @@ In order to get the most value out of the bootcamp, we recommend that you have t
     b. [Git](https://git-scm.com/install/windows)  
     c. [Power Platform CLI](https://aka.ms/pac)  
     d. [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell?view=powershell-7.6)  
-3. Three [Power Platform Developer environments](https://learn.microsoft.com/en-us/power-platform/developer/plan) with Dataverse enabled and [admin level access in these environments](https://admin.powerplatform.microsoft.com)  
-4. [An Azure App Registration with Client ID and Secret registered as an S2S App](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#confidential-client-app-registration) in each of 3 environments with the System Administrator Security Role  
+3. Three [Power Platform Developer environments](https://learn.microsoft.com/en-us/power-platform/developer/plan) with Dataverse enabled and [admin level access in these environments](https://admin.powerplatform.microsoft.com). Trial environments are not recommended although they may suffice if there's no alternative option  
+4. [An Azure App Registration with Client ID and Secret registered as an S2S App](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#confidential-client-app-registration) in each of 3 environments with the System Administrator Security Role (although we will be walking through the setup of this in the introductory labs) 
 5. An [Azure DevOps organization](https://dev.azure.com/) with either:  
     a. Full organization admin rights; OR  
     b. A [project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser) with admin rights in it and the Power Platform Build Tools extension for Azure DevOps pre-installed  
-6. A working [Microsoft-hosted agent](https://aka.ms/azpipelines-parallelism-request) in Azure DevOps to process pipelines  
+6. A working [Microsoft-hosted agent](https://aka.ms/azpipelines-parallelism-request) and/or a self-hosted agent configured in Azure DevOps to process pipelines  
 7. Curiosity for learning DevOps for Power Platform
 
 If you have been unable to complete any of these prerequisites, please complete [this form](https://forms.cloud.microsoft/e/E9K8z9b78g), and we will try our best to help
@@ -46,11 +46,11 @@ You are a DevOps Engineer at Zava Construction supporting a Power Platform imple
 
 ## The Challenge
 
-Implement a source control centric development, build and deployment process using the capabilities available within Azure DevOps. The labs in this repository will guide you through the setup and at the end of the bootcamp a working solution will be shared with you.
+Implement a source control centric development, build and deployment process using the capabilities available within Azure DevOps. The labs in this repository will guide you through the setup and by the end of the bootcamp, you will have a fully a operational setup.
 
 ## Further Resources
 
-Here are some helpful resources that will enhance your learning experience during and beyond the bootcamp. Be sure to bookmark these!  
+Here are some helpful resources that will enhance your learning experience during and beyond the bootcamp. Be sure to bookmark these for future reference and to explore at your lesiure!  
 1. [Power Platform ALM Documentation](https://learn.microsoft.com/en-us/power-platform/alm/)
 2. [Power Platform Build Tools GitHub repository with task definitions](https://github.com/microsoft/powerplatform-build-tools/tree/main/src/tasks)  
 3. [Power Platfrom Build Tools Tasks documentation](https://learn.microsoft.com/en-us/power-platform/alm/devops-build-tool-tasks)  
