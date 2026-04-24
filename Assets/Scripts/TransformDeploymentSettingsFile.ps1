@@ -99,7 +99,14 @@ try {
  
     Connect-AdminPowerApp
  
-    $connections = Get-AdminPowerAppConnection -EnvironmentName $environmentId -CreatedBy $username
+    if ($username){
+        $connections = Get-AdminPowerAppConnection -EnvironmentName $environmentId -CreatedBy $username
+    }
+    else{
+        $connections = Get-AdminPowerAppConnection -EnvironmentName $environmentId
+    }
+    
+    
    
     foreach ($object in $json.PSObject.Properties) {
         Write-Host "Processing object: $($object.Name)"
